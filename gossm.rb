@@ -2,16 +2,16 @@
 class Gossm < Formula
   desc "gossm is interactive CLI tool that you select server in AWS and then could connect or send files your AWS server using start-session, ssh, scp under AWS Systems Manger."
   homepage ""
-  version "1.2.3"
+  version "1.3.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/gjbae1212/gossm/releases/download/v1.2.3/gossm_1.2.3_Darwin_x86_64.tar.gz"
-    sha256 "edffdc5153a34507eb0300b55e7d21dcf0448ad7929bb3b28222db7e76913593"
+    url "https://github.com/gjbae1212/gossm/releases/download/v1.3.0/gossm_1.3.0_Darwin_x86_64.tar.gz"
+    sha256 "19a7dda332efbbd5638291a042189a3d8333d8eb8e19e00d6b5ed1e10933dc82"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/gjbae1212/gossm/releases/download/v1.2.3/gossm_1.2.3_Linux_x86_64.tar.gz"
-      sha256 "9bacd0b217d7be4e12689820b01e791a83b1d189531755b039ba4bd8ee57928e"
+      url "https://github.com/gjbae1212/gossm/releases/download/v1.3.0/gossm_1.3.0_Linux_x86_64.tar.gz"
+      sha256 "cfa132ced47a6cc618ff9a59805a271e48cd457ba66a45e2219cbab603fdc49b"
     end
   end
 
