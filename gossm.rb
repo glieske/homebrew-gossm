@@ -5,20 +5,20 @@
 class Gossm < Formula
   desc "gossm is interactive CLI tool that you select server in AWS and then could connect or send files your AWS server using start-session, ssh, scp under AWS Systems Manger."
   homepage ""
-  version "1.3.4"
+  version "1.3.5"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/gjbae1212/gossm/releases/download/v1.3.4/gossm_1.3.4_Darwin_x86_64.tar.gz"
-    sha256 "ebee4725390c4f197438840440875ca68ec824f5b5cb24156e3785e99e87e5a7"
+    url "https://github.com/gjbae1212/gossm/releases/download/v1.3.5/gossm_1.3.5_Darwin_x86_64.tar.gz"
+    sha256 "28e87ffa898e3b98ba3301cda93794f745b84cb6789164161668319ef763b0e3"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/gjbae1212/gossm/releases/download/v1.3.4/gossm_1.3.4_Linux_x86_64.tar.gz"
-    sha256 "d237095a0486b0531f37adf43b7c59a619ba1fd255e9f6999fa21f4c8c0dff16"
+    url "https://github.com/gjbae1212/gossm/releases/download/v1.3.5/gossm_1.3.5_Linux_x86_64.tar.gz"
+    sha256 "43df3495dfd447ab8d218fcc9e8679c96c0ca3f4e7f9e7e46796543d9d7511e0"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/gjbae1212/gossm/releases/download/v1.3.4/gossm_1.3.4_Linux_arm64.tar.gz"
-    sha256 "9ff0a8ee9554c014fa1e2e69d8b3459d6fb79b521e96902be887c1018828231c"
+    url "https://github.com/gjbae1212/gossm/releases/download/v1.3.5/gossm_1.3.5_Linux_arm64.tar.gz"
+    sha256 "cc42dd3bab3300b0c5076774d2fbaab38e5a45784358c4ed649dc2d834926637"
   end
 
   def install
