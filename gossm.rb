@@ -5,32 +5,43 @@
 class Gossm < Formula
   desc "gossm is interactive CLI tool that you select server in AWS and then could connect or send files your AWS server using start-session, ssh, scp under AWS Systems Manger."
   homepage ""
-  version "1.4.4"
-  bottle :unneeded
+  version "1.4.5"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/gjbae1212/gossm/releases/download/v1.4.4/gossm_1.4.4_Darwin_x86_64.tar.gz"
-      sha256 "c2b167308ea61b178f3b019d1a698dd8a2b30f46a3fe3c193833ff0e6d6c967e"
-    end
     if Hardware::CPU.arm?
-      url "https://github.com/gjbae1212/gossm/releases/download/v1.4.4/gossm_1.4.4_Darwin_arm64.tar.gz"
-      sha256 "e3dd767d8cf677d4ab5735cbf08b9f0cb5223821c1c2fee5d0904631e84a3742"
+      url "https://github.com/gjbae1212/gossm/releases/download/v1.4.5/gossm_1.4.5_Darwin_arm64.tar.gz"
+      sha256 "edb882aec8f7eb5db0fcfc9693bb061f1766bd09a9900acba2a2e3f9f6b2987f"
+
+      def install
+        bin.install "gossm"
+      end
+    end
+    if Hardware::CPU.intel?
+      url "https://github.com/gjbae1212/gossm/releases/download/v1.4.5/gossm_1.4.5_Darwin_x86_64.tar.gz"
+      sha256 "cd714133c158e7b48eb89633d806b9a5412f036174b7c552e9209a4e834dd27c"
+
+      def install
+        bin.install "gossm"
+      end
     end
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/gjbae1212/gossm/releases/download/v1.4.4/gossm_1.4.4_Linux_x86_64.tar.gz"
-      sha256 "dbfa18255a13b8380cfaec6f2f6caa7389a0e2f0e600630d596994385cf6c901"
-    end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gjbae1212/gossm/releases/download/v1.4.4/gossm_1.4.4_Linux_arm64.tar.gz"
-      sha256 "d6d9fdd8e6e92f584c80d3481d25762756b9bc2127fbb6c98ae2337fa36b3a4e"
-    end
-  end
+      url "https://github.com/gjbae1212/gossm/releases/download/v1.4.5/gossm_1.4.5_Linux_arm64.tar.gz"
+      sha256 "77e968ca19da2fdad321099738dca3fe66970033c26db0fb7594ea6c925b335f"
 
-  def install
-    bin.install "gossm"
+      def install
+        bin.install "gossm"
+      end
+    end
+    if Hardware::CPU.intel?
+      url "https://github.com/gjbae1212/gossm/releases/download/v1.4.5/gossm_1.4.5_Linux_x86_64.tar.gz"
+      sha256 "2c18365ba5fe2a56e29ff9567aa177e8720406f8ef00c3359140eb2ae855e581"
+
+      def install
+        bin.install "gossm"
+      end
+    end
   end
 end
