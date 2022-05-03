@@ -5,20 +5,20 @@
 class Gossm < Formula
   desc "gossm is interactive CLI tool that you select server in AWS and then could connect or send files your AWS server using start-session, ssh, scp under AWS Systems Manger."
   homepage ""
-  version "1.4.5"
+  version "1.4.6"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/gjbae1212/gossm/releases/download/v1.4.5/gossm_1.4.5_Darwin_arm64.tar.gz"
-      sha256 "edb882aec8f7eb5db0fcfc9693bb061f1766bd09a9900acba2a2e3f9f6b2987f"
+      url "https://github.com/gjbae1212/gossm/releases/download/v1.4.6/gossm_1.4.6_Darwin_arm64.tar.gz"
+      sha256 "747d5be8e1bfe4fc7f168f9ba9b3f1453eea0b767cb99129952602304fd2ff4b"
 
       def install
         bin.install "gossm"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/gjbae1212/gossm/releases/download/v1.4.5/gossm_1.4.5_Darwin_x86_64.tar.gz"
-      sha256 "cd714133c158e7b48eb89633d806b9a5412f036174b7c552e9209a4e834dd27c"
+      url "https://github.com/gjbae1212/gossm/releases/download/v1.4.6/gossm_1.4.6_Darwin_x86_64.tar.gz"
+      sha256 "1100c1e242369c8cab9c26753290a8d7d916852e713e9539ecb920ae36256f79"
 
       def install
         bin.install "gossm"
@@ -28,16 +28,16 @@ class Gossm < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gjbae1212/gossm/releases/download/v1.4.5/gossm_1.4.5_Linux_arm64.tar.gz"
-      sha256 "77e968ca19da2fdad321099738dca3fe66970033c26db0fb7594ea6c925b335f"
+      url "https://github.com/gjbae1212/gossm/releases/download/v1.4.6/gossm_1.4.6_Linux_arm64.tar.gz"
+      sha256 "08460552f060d86348571835c2afaff9921b36cd20949d13dce8e1aecf6a64e3"
 
       def install
         bin.install "gossm"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/gjbae1212/gossm/releases/download/v1.4.5/gossm_1.4.5_Linux_x86_64.tar.gz"
-      sha256 "2c18365ba5fe2a56e29ff9567aa177e8720406f8ef00c3359140eb2ae855e581"
+      url "https://github.com/gjbae1212/gossm/releases/download/v1.4.6/gossm_1.4.6_Linux_x86_64.tar.gz"
+      sha256 "3889a711b4dd50cee53e54ec4872cb5e0fe63da68cb6f7334dd3b720782e45c4"
 
       def install
         bin.install "gossm"
