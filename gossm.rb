@@ -4,21 +4,21 @@
 class Gossm < Formula
   desc "gossm is interactive CLI tool that you select server in AWS and then could connect or send files your AWS server using start-session, ssh, scp under AWS Systems Manger."
   homepage "https://github.com/glieske/gossm"
-  version "1.6.2"
+  version "1.6.9"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/glieske/gossm/releases/download/v1.6.2/gossm_1.6.2_darwin_arm64.tar.gz"
-      sha256 "fecec7533ba0e761c51e1ab22e068096f9183b27393949986b371f076da8f66d"
+      url "https://github.com/glieske/gossm/releases/download/v1.6.9/gossm_1.6.9_darwin_arm64.tar.gz"
+      sha256 "54eaa9966beae30a77d2f856dc3a8bd3bb42d9b75a420e6b49ccd1841c24173a"
 
       def install
         bin.install "gossm"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/glieske/gossm/releases/download/v1.6.2/gossm_1.6.2_darwin_amd64.tar.gz"
-      sha256 "82b1a55ef921232f27436f9cfced4711e3947e48a0bb0b9782080a4db169cb4e"
+      url "https://github.com/glieske/gossm/releases/download/v1.6.9/gossm_1.6.9_darwin_amd64.tar.gz"
+      sha256 "79ef6cfbfeb795f54726b65dd6d99451f46e12c55c685b4570ea7860f1234686"
 
       def install
         bin.install "gossm"
@@ -28,16 +28,16 @@ class Gossm < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/glieske/gossm/releases/download/v1.6.2/gossm_1.6.2_linux_arm64.tar.gz"
-      sha256 "919deee15f9ea2e0e680b59a250a40695a3f51eaa8901d2e071d5d05381473a5"
+      url "https://github.com/glieske/gossm/releases/download/v1.6.9/gossm_1.6.9_linux_arm64.tar.gz"
+      sha256 "ec1df0395157ceca1842740f7a2f39a30f6b3e3186525e47454a548dd76924a6"
 
       def install
         bin.install "gossm"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/glieske/gossm/releases/download/v1.6.2/gossm_1.6.2_linux_amd64.tar.gz"
-      sha256 "cc4673161445143c4701bf10df57733567e2d0560a55acfeb8d36901aa83dbb2"
+      url "https://github.com/glieske/gossm/releases/download/v1.6.9/gossm_1.6.9_linux_amd64.tar.gz"
+      sha256 "66869f7cdfaae4ff842dd2ff70a607485444684bbfdb58b4720c202f4464cfda"
 
       def install
         bin.install "gossm"
