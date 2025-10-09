@@ -3,7 +3,7 @@ cask "gossm" do
   name "gossm"
   desc ""
   homepage ""
-  version "1.6.15"
+  version "1.6.16"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "gossm" do
   on_macos do
     on_intel do
       url "https://github.com/glieske/gossm/releases/download/v#{version}/gossm_#{version}_darwin_amd64.tar.gz"
-      sha256 "2d905603f45f519bb083e5752fe383fd5f9ffdc65f80377e4ed6552a7da17a15"
+      sha256 "b452d7b773a573e7721bbc1cb9a7afde6dc9ca608503d6ee9ef142da5748c48a"
     end
     on_arm do
       url "https://github.com/glieske/gossm/releases/download/v#{version}/gossm_#{version}_darwin_arm64.tar.gz"
-      sha256 "f4b5dd9ed868323d4cd18b117d049fa15ff3026fdc910c97db06834f9464f688"
+      sha256 "7d59935b2b1cfc3c75b3110fb52bc8ea7b0edd16c9274a5cacb49cd60a84032f"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/glieske/gossm/releases/download/v#{version}/gossm_#{version}_linux_amd64.tar.gz"
-      sha256 "fc680eba45ccb4b4610e12b9d50606de8aad143551e47ac9ef4b0e0f2d4a31d8"
+      sha256 "72ccb9697d116c4e949a1affceeb4e55943e372a48113d499a47c850d0da92ab"
     end
     on_arm do
       url "https://github.com/glieske/gossm/releases/download/v#{version}/gossm_#{version}_linux_arm64.tar.gz"
-      sha256 "847dac2c40340ed8917a67ff1b173f74ac76c18577f5deb7ede587edf07599d2"
+      sha256 "2686ee052e3d7f26c1adc673501962d1a4f5cd0625dc238a1d12d2673b23224a"
     end
   end
 
